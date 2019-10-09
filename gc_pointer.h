@@ -212,7 +212,7 @@ T *Pointer<T, size>::operator=(T *t){
     }
     if(size>0){
     	isArray=true;
-        arraySize-size;
+        arraySize=size;
     }
     this->addr = t;
     return addr;
